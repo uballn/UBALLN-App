@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700BAB8A1EA14AFD0042C25E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700BAB891EA14AFD0042C25E /* MapViewController.swift */; };
+		700BAB8E1EA159270042C25E /* ufonts.com_gotham-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 700BAB8B1EA157E70042C25E /* ufonts.com_gotham-black.ttf */; };
+		700BAB8F1EA1592B0042C25E /* ufonts.com_gotham-book-opentype.otf in Resources */ = {isa = PBXBuildFile; fileRef = 700BAB8C1EA157E70042C25E /* ufonts.com_gotham-book-opentype.otf */; };
+		700BAB901EA1592E0042C25E /* ufonts.com_gotham-medium-1-opentype.otf in Resources */ = {isa = PBXBuildFile; fileRef = 700BAB8D1EA157E70042C25E /* ufonts.com_gotham-medium-1-opentype.otf */; };
+		7015C9E41E79CB3F00FA9A1D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015C9E31E79CB3F00FA9A1D /* Extension.swift */; };
+		701762C71E710B730046E468 /* Rex Bold Inline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 701762C41E71094A0046E468 /* Rex Bold Inline.otf */; };
+		701762C81E710B730046E468 /* Rex Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 701762C51E71094A0046E468 /* Rex Bold.otf */; };
+		701762C91E710B730046E468 /* Rex Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 701762C61E71094A0046E468 /* Rex Light.otf */; };
+		701762CC1E7112030046E468 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701762CB1E7112030046E468 /* MapKit.framework */; };
+		70344AC41EC426420070701A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70344AC31EC426420070701A /* SignupViewController.swift */; };
+		70344AC61EC4271E0070701A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70344AC51EC4271E0070701A /* LoginViewController.swift */; };
+		70344AC81EC4305C0070701A /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70344AC71EC4305C0070701A /* PasswordViewController.swift */; };
+		70344ACA1EC4357D0070701A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70344AC91EC4357D0070701A /* InfoViewController.swift */; };
+		705852141EC6E6B1003422F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 705852131EC6E6B1003422F8 /* GoogleService-Info.plist */; };
+		7065924F1EA72D3F0097A187 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065924E1EA72D3F0097A187 /* SetupViewController.swift */; };
+		707146591EC178FB00D2E584 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707146581EC178FB00D2E584 /* MainViewController.swift */; };
+		7081505E1EAEF75000380915 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081505D1EAEF74F00380915 /* ListViewController.swift */; };
+		708150601EAF1A1200380915 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081505F1EAF1A1200380915 /* ListTableViewCell.swift */; };
+		708150621EAF1A8B00380915 /* ListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708150611EAF1A8B00380915 /* ListTableView.swift */; };
+		709ED2AB1EA163FF007F73AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709ED2A91EA163FF007F73AF /* Main.storyboard */; };
+		7F3FEDD41E85DB2D0049358D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F3FEDD31E85DB2D0049358D /* CoreLocation.framework */; };
+		7F3FF5F51EB27F9D00CFE4E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FF5F41EB27F9D00CFE4E2 /* ProfileViewController.swift */; };
+		7F6771E01EB3F5B8000D45E2 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6771DF1EB3F5B8000D45E2 /* InboxViewController.swift */; };
+		7FBBA9DF1EC6590B003A3293 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBA9DE1EC6590B003A3293 /* SettingsViewController.swift */; };
+		7FBBA9E11EC6593F003A3293 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBA9E01EC6593F003A3293 /* EditViewController.swift */; };
+		7FBBA9E31EC65967003A3293 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBA9E21EC65967003A3293 /* FriendsViewController.swift */; };
+		7FBBA9E51EC66387003A3293 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBBA9E41EC66387003A3293 /* ShareViewController.swift */; };
+		7FD0170F1E70BEE200884BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0170E1E70BEE200884BFB /* AppDelegate.swift */; };
+		7FD017111E70BEE200884BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD017101E70BEE200884BFB /* ViewController.swift */; };
+		7FD017171E70BEE200884BFB /* UBALLN_Basketball.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD017151E70BEE200884BFB /* UBALLN_Basketball.xcdatamodeld */; };
+		7FD017191E70BEE200884BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD017181E70BEE200884BFB /* Assets.xcassets */; };
+		7FD0171C1E70BEE200884BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD0171A1E70BEE200884BFB /* LaunchScreen.storyboard */; };
+		7FD017271E70BEE200884BFB /* UBALLN_BasketballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD017261E70BEE200884BFB /* UBALLN_BasketballTests.swift */; };
+		7FD017321E70BEE200884BFB /* UBALLN_BasketballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD017311E70BEE200884BFB /* UBALLN_BasketballUITests.swift */; };
+		A11AE4C5721A8453924A47F7 /* Pods_UBALLN_Basketball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B0E5469AA22164133116AD /* Pods_UBALLN_Basketball.framework */; };
+		BD67DD677B6848C597B1F547 /* Pods_UBALLN_BasketballUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D64C610DA9FF029DE366ABF /* Pods_UBALLN_BasketballUITests.framework */; };
+		C23205B09F7AFFF6C257C47D /* Pods_UBALLN_BasketballTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02221E0167EA5F025B1D87DF /* Pods_UBALLN_BasketballTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FD017231E70BEE200884BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FD017031E70BEE200884BFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FD0170A1E70BEE200884BFB;
+			remoteInfo = "UBALLN Basketball";
+		};
+		7FD0172E1E70BEE200884BFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FD017031E70BEE200884BFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FD0170A1E70BEE200884BFB;
+			remoteInfo = "UBALLN Basketball";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02221E0167EA5F025B1D87DF /* Pods_UBALLN_BasketballTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBALLN_BasketballTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		231531BE57CDE0A87EAFFA6E /* Pods-UBALLN Basketball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBALLN Basketball.release.xcconfig"; path = "Pods/Target Support Files/Pods-UBALLN Basketball/Pods-UBALLN Basketball.release.xcconfig"; sourceTree = "<group>"; };
+		2C26F6B00362FE668ECA52F3 /* Pods-UBALLN BasketballTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBALLN BasketballTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UBALLN BasketballTests/Pods-UBALLN BasketballTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D64C610DA9FF029DE366ABF /* Pods_UBALLN_BasketballUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBALLN_BasketballUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4984A665F79687130B5965DE /* Pods-UBALLN BasketballUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBALLN BasketballUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UBALLN BasketballUITests/Pods-UBALLN BasketballUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		61B72247A588DEF1EB87AA02 /* Pods-UBALLN BasketballTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBALLN BasketballTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UBALLN BasketballTests/Pods-UBALLN BasketballTests.release.xcconfig"; sourceTree = "<group>"; };
+		63B5C7B9EE9C5E1284E4A8EA /* Pods-UBALLN BasketballUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBALLN BasketballUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UBALLN BasketballUITests/Pods-UBALLN BasketballUITests.release.xcconfig"; sourceTree = "<group>"; };
+		700BAB891EA14AFD0042C25E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		700BAB8B1EA157E70042C25E /* ufonts.com_gotham-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-black.ttf"; sourceTree = "<group>"; };
+		700BAB8C1EA157E70042C25E /* ufonts.com_gotham-book-opentype.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book-opentype.otf"; sourceTree = "<group>"; };
+		700BAB8D1EA157E70042C25E /* ufonts.com_gotham-medium-1-opentype.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-medium-1-opentype.otf"; sourceTree = "<group>"; };
+		7015C9E31E79CB3F00FA9A1D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		701762C41E71094A0046E468 /* Rex Bold Inline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rex Bold Inline.otf"; sourceTree = "<group>"; };
+		701762C51E71094A0046E468 /* Rex Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rex Bold.otf"; sourceTree = "<group>"; };
+		701762C61E71094A0046E468 /* Rex Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rex Light.otf"; sourceTree = "<group>"; };
+		701762CB1E7112030046E468 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7029924B1E9CA010004CB95C /* UBALLN Basketball.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UBALLN Basketball.entitlements"; sourceTree = "<group>"; };
+		70344AC31EC426420070701A /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		70344AC51EC4271E0070701A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70344AC71EC4305C0070701A /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		70344AC91EC4357D0070701A /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		705852131EC6E6B1003422F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7065924E1EA72D3F0097A187 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		707146581EC178FB00D2E584 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7081505D1EAEF74F00380915 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		7081505F1EAF1A1200380915 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		708150611EAF1A8B00380915 /* ListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableView.swift; sourceTree = "<group>"; };
+		709ED2AA1EA163FF007F73AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F3FEDD31E85DB2D0049358D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F3FF5F41EB27F9D00CFE4E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7F6771DF1EB3F5B8000D45E2 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		7FBBA9DE1EC6590B003A3293 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7FBBA9E01EC6593F003A3293 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		7FBBA9E21EC65967003A3293 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		7FBBA9E41EC66387003A3293 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		7FD0170B1E70BEE200884BFB /* UBALLN Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UBALLN Basketball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD0170E1E70BEE200884BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FD017101E70BEE200884BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FD017161E70BEE200884BFB /* UBALLN_Basketball.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UBALLN_Basketball.xcdatamodel; sourceTree = "<group>"; };
+		7FD017181E70BEE200884BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FD0171B1E70BEE200884BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FD0171D1E70BEE200884BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD017221E70BEE200884BFB /* UBALLN BasketballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UBALLN BasketballTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD017261E70BEE200884BFB /* UBALLN_BasketballTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBALLN_BasketballTests.swift; sourceTree = "<group>"; };
+		7FD017281E70BEE200884BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD0172D1E70BEE200884BFB /* UBALLN BasketballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UBALLN BasketballUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD017311E70BEE200884BFB /* UBALLN_BasketballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBALLN_BasketballUITests.swift; sourceTree = "<group>"; };
+		7FD017331E70BEE200884BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B0E5469AA22164133116AD /* Pods_UBALLN_Basketball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UBALLN_Basketball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7232E2950F1903AA6ACCCE9 /* Pods-UBALLN Basketball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UBALLN Basketball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UBALLN Basketball/Pods-UBALLN Basketball.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FD017081E70BEE200884BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3FEDD41E85DB2D0049358D /* CoreLocation.framework in Frameworks */,
+				701762CC1E7112030046E468 /* MapKit.framework in Frameworks */,
+				A11AE4C5721A8453924A47F7 /* Pods_UBALLN_Basketball.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD0171F1E70BEE200884BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23205B09F7AFFF6C257C47D /* Pods_UBALLN_BasketballTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD0172A1E70BEE200884BFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD67DD677B6848C597B1F547 /* Pods_UBALLN_BasketballUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63BBD3AA42F3B1E8F917F6B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7232E2950F1903AA6ACCCE9 /* Pods-UBALLN Basketball.debug.xcconfig */,
+				231531BE57CDE0A87EAFFA6E /* Pods-UBALLN Basketball.release.xcconfig */,
+				2C26F6B00362FE668ECA52F3 /* Pods-UBALLN BasketballTests.debug.xcconfig */,
+				61B72247A588DEF1EB87AA02 /* Pods-UBALLN BasketballTests.release.xcconfig */,
+				4984A665F79687130B5965DE /* Pods-UBALLN BasketballUITests.debug.xcconfig */,
+				63B5C7B9EE9C5E1284E4A8EA /* Pods-UBALLN BasketballUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7003FAF81E73AA62002F2321 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F3FF5F41EB27F9D00CFE4E2 /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		7015C9E61E79D09C00FA9A1D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7015C9E31E79CB3F00FA9A1D /* Extension.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		701762C31E7109040046E468 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				700BAB8B1EA157E70042C25E /* ufonts.com_gotham-black.ttf */,
+				700BAB8C1EA157E70042C25E /* ufonts.com_gotham-book-opentype.otf */,
+				700BAB8D1EA157E70042C25E /* ufonts.com_gotham-medium-1-opentype.otf */,
+				701762C41E71094A0046E468 /* Rex Bold Inline.otf */,
+				701762C51E71094A0046E468 /* Rex Bold.otf */,
+				701762C61E71094A0046E468 /* Rex Light.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		701762CA1E7112030046E468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F3FEDD31E85DB2D0049358D /* CoreLocation.framework */,
+				701762CB1E7112030046E468 /* MapKit.framework */,
+				86B0E5469AA22164133116AD /* Pods_UBALLN_Basketball.framework */,
+				02221E0167EA5F025B1D87DF /* Pods_UBALLN_BasketballTests.framework */,
+				2D64C610DA9FF029DE366ABF /* Pods_UBALLN_BasketballUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70344AC21EC425930070701A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7FD017101E70BEE200884BFB /* ViewController.swift */,
+				70344AC31EC426420070701A /* SignupViewController.swift */,
+				70344AC51EC4271E0070701A /* LoginViewController.swift */,
+				70344AC71EC4305C0070701A /* PasswordViewController.swift */,
+				70344AC91EC4357D0070701A /* InfoViewController.swift */,
+				7FBBA9E41EC66387003A3293 /* ShareViewController.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		70E173E01E7289A5002DD4F5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				707146581EC178FB00D2E584 /* MainViewController.swift */,
+				700BAB891EA14AFD0042C25E /* MapViewController.swift */,
+				7065924E1EA72D3F0097A187 /* SetupViewController.swift */,
+				7081505D1EAEF74F00380915 /* ListViewController.swift */,
+				708150611EAF1A8B00380915 /* ListTableView.swift */,
+				7081505F1EAF1A1200380915 /* ListTableViewCell.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		7F6771DE1EB3F58C000D45E2 /* SubScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7FBBA9DE1EC6590B003A3293 /* SettingsViewController.swift */,
+				7F6771DF1EB3F5B8000D45E2 /* InboxViewController.swift */,
+				7FBBA9E01EC6593F003A3293 /* EditViewController.swift */,
+				7FBBA9E21EC65967003A3293 /* FriendsViewController.swift */,
+			);
+			name = SubScreen;
+			sourceTree = "<group>";
+		};
+		7FD017021E70BEE200884BFB = {
+			isa = PBXGroup;
+			children = (
+				7FD0170D1E70BEE200884BFB /* UBALLN Basketball */,
+				7FD017251E70BEE200884BFB /* UBALLN BasketballTests */,
+				7FD017301E70BEE200884BFB /* UBALLN BasketballUITests */,
+				7FD0170C1E70BEE200884BFB /* Products */,
+				701762CA1E7112030046E468 /* Frameworks */,
+				63BBD3AA42F3B1E8F917F6B4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7FD0170C1E70BEE200884BFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FD0170B1E70BEE200884BFB /* UBALLN Basketball.app */,
+				7FD017221E70BEE200884BFB /* UBALLN BasketballTests.xctest */,
+				7FD0172D1E70BEE200884BFB /* UBALLN BasketballUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FD0170D1E70BEE200884BFB /* UBALLN Basketball */ = {
+			isa = PBXGroup;
+			children = (
+				7029924B1E9CA010004CB95C /* UBALLN Basketball.entitlements */,
+				7FD0170E1E70BEE200884BFB /* AppDelegate.swift */,
+				70344AC21EC425930070701A /* Onboarding */,
+				7003FAF81E73AA62002F2321 /* Profile */,
+				70E173E01E7289A5002DD4F5 /* Main */,
+				7F6771DE1EB3F58C000D45E2 /* SubScreen */,
+				7015C9E61E79D09C00FA9A1D /* Helpers */,
+				7FD017181E70BEE200884BFB /* Assets.xcassets */,
+				709ED2A91EA163FF007F73AF /* Main.storyboard */,
+				701762C31E7109040046E468 /* Resources */,
+				7FD0171A1E70BEE200884BFB /* LaunchScreen.storyboard */,
+				705852131EC6E6B1003422F8 /* GoogleService-Info.plist */,
+				7FD0171D1E70BEE200884BFB /* Info.plist */,
+				7FD017151E70BEE200884BFB /* UBALLN_Basketball.xcdatamodeld */,
+			);
+			path = "UBALLN Basketball";
+			sourceTree = "<group>";
+		};
+		7FD017251E70BEE200884BFB /* UBALLN BasketballTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FD017261E70BEE200884BFB /* UBALLN_BasketballTests.swift */,
+				7FD017281E70BEE200884BFB /* Info.plist */,
+			);
+			path = "UBALLN BasketballTests";
+			sourceTree = "<group>";
+		};
+		7FD017301E70BEE200884BFB /* UBALLN BasketballUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FD017311E70BEE200884BFB /* UBALLN_BasketballUITests.swift */,
+				7FD017331E70BEE200884BFB /* Info.plist */,
+			);
+			path = "UBALLN BasketballUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FD0170A1E70BEE200884BFB /* UBALLN Basketball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD017361E70BEE200884BFB /* Build configuration list for PBXNativeTarget "UBALLN Basketball" */;
+			buildPhases = (
+				9A3D46E40D061653E1963204 /* [CP] Check Pods Manifest.lock */,
+				7FD017071E70BEE200884BFB /* Sources */,
+				7FD017081E70BEE200884BFB /* Frameworks */,
+				7FD017091E70BEE200884BFB /* Resources */,
+				D623B6BA477B64202F350C07 /* [CP] Embed Pods Frameworks */,
+				5A5BFCEA016F0F8AA9EFF071 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UBALLN Basketball";
+			productName = "UBALLN Basketball";
+			productReference = 7FD0170B1E70BEE200884BFB /* UBALLN Basketball.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FD017211E70BEE200884BFB /* UBALLN BasketballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD017391E70BEE200884BFB /* Build configuration list for PBXNativeTarget "UBALLN BasketballTests" */;
+			buildPhases = (
+				00BD1E25D41D610B731D652C /* [CP] Check Pods Manifest.lock */,
+				7FD0171E1E70BEE200884BFB /* Sources */,
+				7FD0171F1E70BEE200884BFB /* Frameworks */,
+				7FD017201E70BEE200884BFB /* Resources */,
+				A9CE292263312FD54D0E27AF /* [CP] Embed Pods Frameworks */,
+				687E708963D4493A1E037CC4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FD017241E70BEE200884BFB /* PBXTargetDependency */,
+			);
+			name = "UBALLN BasketballTests";
+			productName = "UBALLN BasketballTests";
+			productReference = 7FD017221E70BEE200884BFB /* UBALLN BasketballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FD0172C1E70BEE200884BFB /* UBALLN BasketballUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD0173C1E70BEE200884BFB /* Build configuration list for PBXNativeTarget "UBALLN BasketballUITests" */;
+			buildPhases = (
+				9D9677AD44BC8B77735A6C1B /* [CP] Check Pods Manifest.lock */,
+				7FD017291E70BEE200884BFB /* Sources */,
+				7FD0172A1E70BEE200884BFB /* Frameworks */,
+				7FD0172B1E70BEE200884BFB /* Resources */,
+				A5F4738305CC4A65BF01A8C9 /* [CP] Embed Pods Frameworks */,
+				15559135ECDEF8ADF4686EB6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FD0172F1E70BEE200884BFB /* PBXTargetDependency */,
+			);
+			name = "UBALLN BasketballUITests";
+			productName = "UBALLN BasketballUITests";
+			productReference = 7FD0172D1E70BEE200884BFB /* UBALLN BasketballUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FD017031E70BEE200884BFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = UBALLN;
+				TargetAttributes = {
+					7FD0170A1E70BEE200884BFB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7HYEU555LQ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					7FD017211E70BEE200884BFB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7HYEU555LQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7FD0170A1E70BEE200884BFB;
+					};
+					7FD0172C1E70BEE200884BFB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7HYEU555LQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7FD0170A1E70BEE200884BFB;
+					};
+				};
+			};
+			buildConfigurationList = 7FD017061E70BEE200884BFB /* Build configuration list for PBXProject "UBALLN Basketball" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FD017021E70BEE200884BFB;
+			productRefGroup = 7FD0170C1E70BEE200884BFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FD0170A1E70BEE200884BFB /* UBALLN Basketball */,
+				7FD017211E70BEE200884BFB /* UBALLN BasketballTests */,
+				7FD0172C1E70BEE200884BFB /* UBALLN BasketballUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FD017091E70BEE200884BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700BAB901EA1592E0042C25E /* ufonts.com_gotham-medium-1-opentype.otf in Resources */,
+				709ED2AB1EA163FF007F73AF /* Main.storyboard in Resources */,
+				700BAB8F1EA1592B0042C25E /* ufonts.com_gotham-book-opentype.otf in Resources */,
+				701762C81E710B730046E468 /* Rex Bold.otf in Resources */,
+				7FD0171C1E70BEE200884BFB /* LaunchScreen.storyboard in Resources */,
+				701762C71E710B730046E468 /* Rex Bold Inline.otf in Resources */,
+				7FD017191E70BEE200884BFB /* Assets.xcassets in Resources */,
+				705852141EC6E6B1003422F8 /* GoogleService-Info.plist in Resources */,
+				700BAB8E1EA159270042C25E /* ufonts.com_gotham-black.ttf in Resources */,
+				701762C91E710B730046E468 /* Rex Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD017201E70BEE200884BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD0172B1E70BEE200884BFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00BD1E25D41D610B731D652C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15559135ECDEF8ADF4686EB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UBALLN BasketballUITests/Pods-UBALLN BasketballUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A5BFCEA016F0F8AA9EFF071 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UBALLN Basketball/Pods-UBALLN Basketball-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		687E708963D4493A1E037CC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UBALLN BasketballTests/Pods-UBALLN BasketballTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3D46E40D061653E1963204 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9677AD44BC8B77735A6C1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5F4738305CC4A65BF01A8C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UBALLN BasketballUITests/Pods-UBALLN BasketballUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CE292263312FD54D0E27AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UBALLN BasketballTests/Pods-UBALLN BasketballTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D623B6BA477B64202F350C07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UBALLN Basketball/Pods-UBALLN Basketball-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FD017071E70BEE200884BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70344AC61EC4271E0070701A /* LoginViewController.swift in Sources */,
+				708150601EAF1A1200380915 /* ListTableViewCell.swift in Sources */,
+				7FBBA9E51EC66387003A3293 /* ShareViewController.swift in Sources */,
+				707146591EC178FB00D2E584 /* MainViewController.swift in Sources */,
+				7F6771E01EB3F5B8000D45E2 /* InboxViewController.swift in Sources */,
+				708150621EAF1A8B00380915 /* ListTableView.swift in Sources */,
+				7FD017111E70BEE200884BFB /* ViewController.swift in Sources */,
+				7015C9E41E79CB3F00FA9A1D /* Extension.swift in Sources */,
+				7FD017171E70BEE200884BFB /* UBALLN_Basketball.xcdatamodeld in Sources */,
+				7FBBA9E11EC6593F003A3293 /* EditViewController.swift in Sources */,
+				7FD0170F1E70BEE200884BFB /* AppDelegate.swift in Sources */,
+				7065924F1EA72D3F0097A187 /* SetupViewController.swift in Sources */,
+				70344AC41EC426420070701A /* SignupViewController.swift in Sources */,
+				70344AC81EC4305C0070701A /* PasswordViewController.swift in Sources */,
+				7FBBA9E31EC65967003A3293 /* FriendsViewController.swift in Sources */,
+				7FBBA9DF1EC6590B003A3293 /* SettingsViewController.swift in Sources */,
+				7F3FF5F51EB27F9D00CFE4E2 /* ProfileViewController.swift in Sources */,
+				7081505E1EAEF75000380915 /* ListViewController.swift in Sources */,
+				70344ACA1EC4357D0070701A /* InfoViewController.swift in Sources */,
+				700BAB8A1EA14AFD0042C25E /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD0171E1E70BEE200884BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD017271E70BEE200884BFB /* UBALLN_BasketballTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD017291E70BEE200884BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD017321E70BEE200884BFB /* UBALLN_BasketballUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FD017241E70BEE200884BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FD0170A1E70BEE200884BFB /* UBALLN Basketball */;
+			targetProxy = 7FD017231E70BEE200884BFB /* PBXContainerItemProxy */;
+		};
+		7FD0172F1E70BEE200884BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FD0170A1E70BEE200884BFB /* UBALLN Basketball */;
+			targetProxy = 7FD0172E1E70BEE200884BFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		709ED2A91EA163FF007F73AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				709ED2AA1EA163FF007F73AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FD0171A1E70BEE200884BFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FD0171B1E70BEE200884BFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FD017341E70BEE200884BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FD017351E70BEE200884BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FD017371E70BEE200884BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7232E2950F1903AA6ACCCE9 /* Pods-UBALLN Basketball.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UBALLN Basketball/UBALLN Basketball.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7HYEU555LQ;
+				INFOPLIST_FILE = "UBALLN Basketball/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uballn.uballnbasketball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7FD017381E70BEE200884BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231531BE57CDE0A87EAFFA6E /* Pods-UBALLN Basketball.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UBALLN Basketball/UBALLN Basketball.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7HYEU555LQ;
+				INFOPLIST_FILE = "UBALLN Basketball/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uballn.uballnbasketball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7FD0173A1E70BEE200884BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C26F6B00362FE668ECA52F3 /* Pods-UBALLN BasketballTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7HYEU555LQ;
+				INFOPLIST_FILE = "UBALLN BasketballTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uballn.UBALLN-BasketballTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBALLN Basketball.app/UBALLN Basketball";
+			};
+			name = Debug;
+		};
+		7FD0173B1E70BEE200884BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B72247A588DEF1EB87AA02 /* Pods-UBALLN BasketballTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7HYEU555LQ;
+				INFOPLIST_FILE = "UBALLN BasketballTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uballn.UBALLN-BasketballTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UBALLN Basketball.app/UBALLN Basketball";
+			};
+			name = Release;
+		};
+		7FD0173D1E70BEE200884BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4984A665F79687130B5965DE /* Pods-UBALLN BasketballUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7HYEU555LQ;
+				INFOPLIST_FILE = "UBALLN BasketballUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uballn.UBALLN-BasketballUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "UBALLN Basketball";
+			};
+			name = Debug;
+		};
+		7FD0173E1E70BEE200884BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B5C7B9EE9C5E1284E4A8EA /* Pods-UBALLN BasketballUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7HYEU555LQ;
+				INFOPLIST_FILE = "UBALLN BasketballUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uballn.UBALLN-BasketballUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "UBALLN Basketball";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FD017061E70BEE200884BFB /* Build configuration list for PBXProject "UBALLN Basketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD017341E70BEE200884BFB /* Debug */,
+				7FD017351E70BEE200884BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD017361E70BEE200884BFB /* Build configuration list for PBXNativeTarget "UBALLN Basketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD017371E70BEE200884BFB /* Debug */,
+				7FD017381E70BEE200884BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD017391E70BEE200884BFB /* Build configuration list for PBXNativeTarget "UBALLN BasketballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD0173A1E70BEE200884BFB /* Debug */,
+				7FD0173B1E70BEE200884BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD0173C1E70BEE200884BFB /* Build configuration list for PBXNativeTarget "UBALLN BasketballUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD0173D1E70BEE200884BFB /* Debug */,
+				7FD0173E1E70BEE200884BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FD017151E70BEE200884BFB /* UBALLN_Basketball.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FD017161E70BEE200884BFB /* UBALLN_Basketball.xcdatamodel */,
+			);
+			currentVersion = 7FD017161E70BEE200884BFB /* UBALLN_Basketball.xcdatamodel */;
+			path = UBALLN_Basketball.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7FD017031E70BEE200884BFB /* Project object */;
+}
