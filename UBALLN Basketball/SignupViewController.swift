@@ -11,8 +11,7 @@ import Firebase
 
 class SignupViewController: UIViewController {
     
-    let databaseRef = FIRDatabase.database().reference(fromURL: "https://uballn-basketball-2f8d6.firebaseio.com/")
-
+    
     @IBOutlet var joinFB: UIButton!
     @IBOutlet var nameField: UITextField!
     @IBOutlet var lastField: UITextField!
@@ -87,34 +86,41 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func createAccount(_ sender: Any) {
-        if emailField.text == "" {
-            let alertController = UIAlertController(title: "Forget something?", message: "Please enter your email and password", preferredStyle: .alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(defaultAction)
-            
-            present(alertController, animated: true, completion: nil)
-            
-        } else {
-            FIRAuth.auth()?.createUser(withEmail: emailField.text!, password: passwordField.text!) { (user, error) in
-                
-                if error == nil {
-                    print("You have successfully signed up")
-                    //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
-                    
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "info")
-                    self.present(vc!, animated: true, completion: nil)
-                    
-                } else {
-                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                    
-                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    alertController.addAction(defaultAction)
-                    
-                    self.present(alertController, animated: true, completion: nil)
-                }
-            }
+        guard let name = nameField.text,
+        name != "",
+        let nickname = lastField.text,
+        nickname != "",
+        let email = emailField.text,
+        email != "",
+        let password = passwordField.text,
+        password != ""
+            else {
+                AlertController.showAlert(self, title: "Forget Something?", message: "Please fill out all fields.")
+                return
         }
+        
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+            guard error == nil else {
+                AlertController.showAlert(self, title: "Error", message: error!.localizedDescription)
+                return
+            }
+            guard let user = user else {
+                return
+            }
+            print(user.email ?? "MISSING EMAIL")
+            print(user.uid)
+            
+            let changeRequest = user.profileChangeRequest()
+            changeRequest.displayName = name
+            changeRequest.commitChanges(completion: { (error) in
+                guard error == nil else {
+                    AlertController.showAlert(self, title: "Error", message: error!.localizedDescription)
+                    return
+                }
+                
+                self.performSegue(withIdentifier: "signup", sender: nil)
+            })
+        })
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

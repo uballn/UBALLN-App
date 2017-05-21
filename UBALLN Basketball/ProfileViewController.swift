@@ -11,6 +11,7 @@ import Firebase
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet var name: UILabel!
     @IBOutlet var profile: UIImageView!
     @IBOutlet weak var messages: UIButton!
     @IBOutlet weak var edit: UIButton!
@@ -29,6 +30,12 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         edit.layer.cornerRadius = 25
         edit.layer.borderWidth = 1
         edit.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.25).cgColor
+        
+        guard let nickname = FIRAuth.auth()?.currentUser?.displayName else {
+            return
+        }
+        
+        name.text = "\(nickname)"
     }
     
     override func didReceiveMemoryWarning() {

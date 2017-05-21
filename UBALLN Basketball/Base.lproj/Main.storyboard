@@ -455,6 +455,7 @@ everything uballn</string>
                         <outlet property="lastField" destination="Pkj-DW-4Ix" id="61d-2z-8Ta"/>
                         <outlet property="nameField" destination="LpC-y8-OH0" id="EL1-80-o7a"/>
                         <outlet property="passwordField" destination="Ug5-ls-ne4" id="CWJ-FK-Dws"/>
+                        <segue destination="5fP-x1-oyo" kind="show" identifier="signup" animates="NO" id="GhX-bR-90K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrx-ar-09W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -543,7 +544,6 @@ everything uballn</string>
                                 </state>
                                 <connections>
                                     <action selector="loginClicked:" destination="RfK-Ge-DbL" eventType="touchUpInside" id="WVr-AB-Whc"/>
-                                    <segue destination="EEO-Yp-qmq" kind="show" identifier="home" id="VRH-oi-UHz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZP3-JR-wN5">
@@ -604,6 +604,7 @@ everything uballn</string>
                         <outlet property="loginBtn" destination="RwF-rw-fW2" id="TbV-Fs-e5J"/>
                         <outlet property="loginFB" destination="ZP3-JR-wN5" id="IOh-ZF-nFv"/>
                         <outlet property="passwordField" destination="9xO-ya-adb" id="HSI-dn-bVO"/>
+                        <segue destination="EEO-Yp-qmq" kind="show" identifier="home" animates="NO" id="uTF-xX-Nie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpC-Gf-sdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -715,7 +716,7 @@ everything uballn</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPT-wM-tmg">
                                 <rect key="frame" x="25" y="410" width="325" height="45"/>
@@ -725,6 +726,9 @@ everything uballn</string>
                                 <state key="normal" title="SET IT UP">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="setupDetails:" destination="5fP-x1-oyo" eventType="touchUpInside" id="qzM-Mm-1ly"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gqM-Ye-mHJ">
                                 <rect key="frame" x="25" y="230" width="325" height="40"/>
@@ -732,7 +736,7 @@ everything uballn</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8pH-z1-njK">
                                 <rect key="frame" x="25" y="290" width="325" height="40"/>
@@ -740,7 +744,7 @@ everything uballn</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="VXZ-vl-5Ow">
                                 <rect key="frame" x="25" y="350" width="155" height="40"/>
@@ -748,7 +752,7 @@ everything uballn</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Eu9-79-w46">
                                 <rect key="frame" x="193" y="350" width="155" height="40"/>
@@ -756,7 +760,7 @@ everything uballn</string>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your player profile info to better customize the available games you see." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1R-ew-I2a">
                                 <rect key="frame" x="25" y="94" width="325" height="45"/>
@@ -781,6 +785,7 @@ everything uballn</string>
                         <outlet property="lopField" destination="8pH-z1-njK" id="BFJ-ad-4Im"/>
                         <outlet property="resetBtn" destination="YPT-wM-tmg" id="RLr-c6-1MS"/>
                         <outlet property="weightField" destination="Eu9-79-w46" id="4Ev-i3-ZMo"/>
+                        <segue destination="EEO-Yp-qmq" kind="show" identifier="details" animates="NO" id="wEH-cp-FhP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKe-tL-1CF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1059,7 +1064,7 @@ everything uballn</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6' 3&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-mq-Haj">
-                                        <rect key="frame" x="66" y="31" width="36.5" height="18"/>
+                                        <rect key="frame" x="66" y="31" width="36" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="OZa-mq-Haj" secondAttribute="height" multiplier="2:1" id="Rrz-tJ-5Bi"/>
                                         </constraints>
@@ -1068,7 +1073,7 @@ everything uballn</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="249 LBS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpB-V8-Va0">
-                                        <rect key="frame" x="154.5" y="31" width="67" height="18"/>
+                                        <rect key="frame" x="154" y="31" width="67" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kpB-V8-Va0" secondAttribute="height" multiplier="67:18" id="LV2-hk-zJX"/>
                                         </constraints>
@@ -1077,7 +1082,7 @@ everything uballn</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me8-uW-wgW">
-                                        <rect key="frame" x="275.5" y="31" width="44.5" height="18"/>
+                                        <rect key="frame" x="275" y="31" width="45" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Me8-uW-wgW" secondAttribute="height" multiplier="5:2" id="s1W-NW-NaD"/>
                                         </constraints>
@@ -1217,7 +1222,6 @@ everything uballn</string>
                                 </state>
                                 <connections>
                                     <action selector="logout:" destination="kXw-o4-XK6" eventType="touchUpInside" id="eCb-tk-rWY"/>
-                                    <segue destination="5gw-QU-eIF" kind="presentation" identifier="landing" animates="NO" id="ulW-nO-4dz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1268,7 +1272,9 @@ everything uballn</string>
                     <connections>
                         <outlet property="edit" destination="dwD-o9-cW5" id="Tlr-2V-IvY"/>
                         <outlet property="messages" destination="1wq-hB-7vz" id="nDS-KL-7xn"/>
+                        <outlet property="name" destination="9Dg-bV-Q5q" id="aaP-Q6-mb3"/>
                         <outlet property="profile" destination="pan-Si-byK" id="0CS-aH-OsT"/>
+                        <segue destination="5gw-QU-eIF" kind="show" identifier="landing" animates="NO" id="bby-4B-bb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsx-Ql-10O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2185,4 +2191,7 @@ Gg4aEBoVGh0aIBolGi0aMBpCGkUaSgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAABpMA
         <image name="messages" width="18" height="14"/>
         <image name="uballn-app-bg" width="375" height="667"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wEH-cp-FhP"/>
+    </inferredMetricsTieBreakers>
 </document>

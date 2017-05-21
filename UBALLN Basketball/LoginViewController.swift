@@ -12,8 +12,7 @@ import Firebase
 class LoginViewController: UIViewController {
     
     //variables
-    let databaseRef = FIRDatabase.database().reference(fromURL: "https://uballn-basketball-2f8d6.firebaseio.com/")
-    
+        
     //outlets
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
