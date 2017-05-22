@@ -32,6 +32,10 @@ class PasswordViewController: UIViewController {
         emailField.leftView = paddingView
         emailField.leftViewMode = UITextFieldViewMode.always
     }
+    
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

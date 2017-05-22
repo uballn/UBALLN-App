@@ -63,6 +63,10 @@ class LoginViewController: UIViewController {
     }
     
     //actions
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
+    
     @IBAction func loginClicked(_ sender: Any) {
         
         guard let email = emailField.text,
