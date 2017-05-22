@@ -81,7 +81,11 @@ class SignupViewController: UIViewController {
         lastField.leftView = paddingView4
         lastField.leftViewMode = UITextFieldViewMode.always
     }
-
+    
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: false, completion: nil)
+    }
+    
     @IBAction func facebookAccount(_ sender: Any) {
     }
     

@@ -23,6 +23,7 @@
 		70344ACA1EC4357D0070701A /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70344AC91EC4357D0070701A /* InfoViewController.swift */; };
 		705852141EC6E6B1003422F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 705852131EC6E6B1003422F8 /* GoogleService-Info.plist */; };
 		7065924F1EA72D3F0097A187 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065924E1EA72D3F0097A187 /* SetupViewController.swift */; };
+		706A6D1C1ED281CB006B5A01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A6D1B1ED281CB006B5A01 /* User.swift */; };
 		707146591EC178FB00D2E584 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707146581EC178FB00D2E584 /* MainViewController.swift */; };
 		7081505E1EAEF75000380915 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081505D1EAEF74F00380915 /* ListViewController.swift */; };
 		708150601EAF1A1200380915 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081505F1EAF1A1200380915 /* ListTableViewCell.swift */; };
@@ -89,6 +90,7 @@
 		70344AC91EC4357D0070701A /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		705852131EC6E6B1003422F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7065924E1EA72D3F0097A187 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		706A6D1B1ED281CB006B5A01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		707146581EC178FB00D2E584 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7081505D1EAEF74F00380915 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7081505F1EAF1A1200380915 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				7015C9E31E79CB3F00FA9A1D /* Extension.swift */,
 				70191A551ECE493D00E90C96 /* AertController.swift */,
+				706A6D1B1ED281CB006B5A01 /* User.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				7015C9E41E79CB3F00FA9A1D /* Extension.swift in Sources */,
 				7FD017171E70BEE200884BFB /* UBALLN_Basketball.xcdatamodeld in Sources */,
 				7FBBA9E11EC6593F003A3293 /* EditViewController.swift in Sources */,
+				706A6D1C1ED281CB006B5A01 /* User.swift in Sources */,
 				7FD0170F1E70BEE200884BFB /* AppDelegate.swift in Sources */,
 				7065924F1EA72D3F0097A187 /* SetupViewController.swift in Sources */,
 				70344AC41EC426420070701A /* SignupViewController.swift in Sources */,
