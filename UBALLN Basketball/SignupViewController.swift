@@ -19,8 +19,12 @@ class SignupViewController: UIViewController {
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var createCTA: UIButton!
     
+    var refUser = FIRDatabaseReference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refUser = FIRDatabase.database().reference().child("users")
 
         joinFB.layer.cornerRadius = 2
         nameField.layer.cornerRadius = 2
@@ -125,6 +129,19 @@ class SignupViewController: UIViewController {
                 self.performSegue(withIdentifier: "signup", sender: nil)
             })
         })
+        
+        addUser()
+    }
+    
+    func addUser(){
+        let key = refUser.childByAutoId().key
+        
+        let users = ["id": key,
+                       "name": nameField.text! as String,
+                       "alias": lastField.text! as String,
+                       "email": emailField.text! as String
+        ]
+        refUser.child(key).setValue(users)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

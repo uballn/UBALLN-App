@@ -9,13 +9,44 @@
 import UIKit
 import GoogleMobileAds
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let imageList = ["24HR-img.jpg","Timberglen-img.jpg","YMCA-img.jpg","Lifetime-img.jpg"]
+    let addressList = ["5100 Belt Line Rd #600","3810 Timberglen Rd","4332 Northaven Rd","3419 Trinity Mills Rd"]
+    let distanceList = ["0.1 mi","4.2 mi","4.4 mi","3.7 mi"]
+    let ageTitleList = ["Avg. Age","Avg. Age","Avg. Age","Avg. Age"]
+    let ageList = ["30+","21+","13+","16+"]
+    let countTitleList = ["Players","Players","Players","Players"]
+    let countList = ["5","18","14","9"]
+    let experienceTitleList = ["Avg. Exp.","Avg. Exp.","Avg. Exp.","Avg. Exp."]
+    let experienceList = ["2.75","3.50","1.50","2.00"]
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return addressList.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "locations", for: indexPath) as! ListTableViewCell
+        
+        cell.cellAddress.text = addressList[indexPath.row]
+        cell.cellDistance.text = distanceList[indexPath.row]
+        cell.cellAgeTitle.text = ageTitleList[indexPath.row]
+        cell.cellAge.text = ageList[indexPath.row]
+        cell.cellCountTitle.text = countTitleList[indexPath.row]
+        cell.cellPlayerCount.text = countList[indexPath.row]
+        cell.cellLevelTitle.text = experienceTitleList[indexPath.row]
+        cell.cellExperience.text = experienceList[indexPath.row]
+        
+        cell.cellImageView.image = UIImage(named: imageList[indexPath.row])
+        
+        return cell
+    }
 
     @IBOutlet var thumbnail: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         thumbnail.layer.cornerRadius = 13
         thumbnail.layer.borderWidth = 1
         thumbnail.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor

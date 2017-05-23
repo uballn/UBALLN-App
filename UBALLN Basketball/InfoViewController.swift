@@ -15,7 +15,7 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var experience = ["recreational", "high school", "collegiate", "semi-pro", "professional"]
     var height = ["4+", "5' 0", "5' 1", "5' 2", "5' 3", "5' 4", "5' 5", "5' 6", "5' 7", "5' 8", "5' 9", "5' 10", "5' 11", "6' 0", "6' 1", "6' 2", "6' 3", "6' 4", "6' 5", "6' 6", "6' 7", "6' 8", "6' 9", "6' 10", "6' 11", "7+"]
     var weight = ["80+ lbs", "90+ lbs", "100+ lbs", "105+ lbs", "110+ lbs", "115+ lbs", "120+ lbs", "125+ lbs", "130+ lbs", "135+ lbs", "140+ lbs", "145+ lbs", "150+ lbs", "155+ lbs", "160+ lbs", "165+ lbs", "170+ lbs", "175+ lbs", "180+ lbs", "185+ lbs", "190+ lbs", "195+ lbs", "200+ lbs", "205+ lbs", "210+ lbs", "215+ lbs", "220+ lbs", "225+ lbs", "230+ lbs", "235+ lbs", "240+ lbs", "245+ lbs", "250+ lbs", "255+ lbs", "260+ lbs", "265+ lbs", "270+ lbs", "275+ lbs", "280+ lbs", "285+ lbs", "290+ lbs", "295+ lbs", "300+ lbs", "310+ lbs", "320+ lbs", "330+ lbs", "340+ lbs", "350+ lbs", "360+ lbs", "370+ lbs", "380+ lbs", "390+ lbs",]
-    var refDetails = FIRDatabaseReference()
+    var refUser = FIRDatabaseReference()
     
     @IBOutlet var genderField: UITextField!
     @IBOutlet var birthdayField: UITextField!
@@ -33,7 +33,7 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refDetails = FIRDatabase.database().reference().child("details")
+        refUser = FIRDatabase.database().reference().child("users")
         picker1.delegate = self
         picker1.dataSource = self
         picker2.delegate = self
@@ -138,7 +138,7 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             AlertController.showAlert(self, title: "Wait A Minute", message: "Please fill out all fields.")
             return
         }
-        addDetails()
+        addUser()
             
         self.performSegue(withIdentifier: "details", sender: nil)
     }
@@ -195,22 +195,22 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == picker1 {
             self.genderField.text = self.gender[row]
-            self.view.endEditing(false)
+            self.view.endEditing(true)
         }
         
         else if pickerView == picker2 {
             self.lopField.text = self.experience[row]
-            self.view.endEditing(false)
+            self.view.endEditing(true)
         }
         
         else if pickerView == picker3 {
             self.heightField.text = self.height[row]
-            self.view.endEditing(false)
+            self.view.endEditing(true)
         }
         
         else if pickerView == picker4 {
             self.weightField.text = self.weight[row]
-            self.view.endEditing(false)
+            self.view.endEditing(true)
         }
     }
     
@@ -237,17 +237,17 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.view.endEditing(true)
     }
     
-    func addDetails(){
-        let key = refDetails.childByAutoId().key
+    func addUser(){
+        let key = refUser.childByAutoId().key
         
-        let details = ["id": key,
+        let users = ["id": key,
                         "gender": genderField.text! as String,
                         "age": birthdayField.text! as String,
                         "played": lopField.text! as String,
                         "height": heightField.text! as String,
                         "weight": weightField.text! as String
                         ]
-        refDetails.child(key).setValue(details)
+        refUser.child(key).setValue(users)
     }
     
     override func didReceiveMemoryWarning() {
