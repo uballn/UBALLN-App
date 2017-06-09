@@ -14,12 +14,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     let imageList = ["24HR-img.jpg","Timberglen-img.jpg","YMCA-img.jpg","Lifetime-img.jpg"]
     let addressList = ["5100 Belt Line Rd #600","3810 Timberglen Rd","4332 Northaven Rd","3419 Trinity Mills Rd"]
     let distanceList = ["0.1 mi","4.2 mi","4.4 mi","3.7 mi"]
-    let ageTitleList = ["Avg. Age","Avg. Age","Avg. Age","Avg. Age"]
-    let ageList = ["30+","21+","13+","16+"]
-    let countTitleList = ["Players","Players","Players","Players"]
-    let countList = ["5","18","14","9"]
-    let experienceTitleList = ["Avg. Exp.","Avg. Exp.","Avg. Exp.","Avg. Exp."]
-    let experienceList = ["2.75","3.50","1.50","2.00"]
+    let ageTitleList = ["Avg. Age  30","Avg. Age  21","Avg. Age  13","Avg. Age  16"]
+    let countTitleList = ["No. Players  5","No. Players  18","No. Players  14","No. Players  9"]
+    let experienceTitleList = ["Avg. Exp.  2.75","Avg. Exp.  3.50","Avg. Exp.  1.50","Avg. Exp.  2.00"]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return addressList.count
@@ -31,11 +28,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.cellAddress.text = addressList[indexPath.row]
         cell.cellDistance.text = distanceList[indexPath.row]
         cell.cellAgeTitle.text = ageTitleList[indexPath.row]
-        cell.cellAge.text = ageList[indexPath.row]
         cell.cellCountTitle.text = countTitleList[indexPath.row]
-        cell.cellPlayerCount.text = countList[indexPath.row]
         cell.cellLevelTitle.text = experienceTitleList[indexPath.row]
-        cell.cellExperience.text = experienceList[indexPath.row]
         
         cell.cellImageView.image = UIImage(named: imageList[indexPath.row])
         
@@ -60,6 +54,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {

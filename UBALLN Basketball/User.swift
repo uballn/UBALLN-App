@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 
 struct User {
+    var alias: String?
     var gender: String!
     var age: String!
     var height: String?
@@ -23,6 +24,7 @@ struct User {
     init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
         ref = snapshot.ref
+        alias = (snapshot.value! as! NSDictionary)["alias"] as? String
         gender = (snapshot.value! as! NSDictionary)["gender"] as! String
         age = (snapshot.value! as! NSDictionary)["age"] as! String
         height = (snapshot.value! as! NSDictionary)["height"] as? String

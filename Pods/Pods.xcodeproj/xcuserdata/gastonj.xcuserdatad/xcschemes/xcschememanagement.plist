@@ -4,6 +4,31 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Cosmos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CryptoSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DTPickerPresenter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMOAuth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,6 +54,56 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KeychainAccess.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Liferay-OAuth.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Liferay-iOS-SDK-Liferay-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Liferay-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LiferayScreens-LiferayScreens-core.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LiferayScreens-LiferayScreens-default.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LiferayScreens.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MDRadialProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-UBALLN Basketball.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,10 +124,185 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SMXMLDocument.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLCipher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TNRadioButtonGroup.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>YapDatabase.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00D4E6D07064F3E0BBC2823A49978121</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>03FE7DE0EDB68CA454F77A746EEFD235</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FA5BA8FC94A8F21CBB1761592E46713</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14F5F7F6CF752EC98F320CB1748CEA8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17FFAB936C421DA68DD9364FB3598D61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1ED8BE8BD6A53853974A60E1AC8B1019</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>235B076762337DC0B996AE2DB969B8CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2DD030A0911C25DFA3E2B507AC0A4CEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>34D1A928278F5A648394209D876A32F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35F211F131A98941D3D82ACCB6214997</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C54B9D561FF73B4E8020C2B69928291</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>416B388906DEFAC81F0676F277AC9058</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>42A938F5D86CD60B3F20B6C7BB161145</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>42EE50F5E3DC184514682430A0761219</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48FA7FEE395EF5459396B0305D47D853</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4984CA8F3B6549E5E8247DA0CA5CCC2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C88E99F06939F44B8C5A151869B5B21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4FDC533A4360A68ABDCE852F04B30927</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55D0A98F102025D522B29B90F9CAEDBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>603B402680150201087E52C930BF0390</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6142C42AD9A949778BBEB8ACDFE2FAB1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>666B1E21E91A25F2B6BD752DD2E466B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B1714E816AE794962516E2ECBB40A5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6BB1C1403B2419F911818DA8413FDA07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77F8D637AF561597DE26C963BBADCA6B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A5A96ECE224C9217B9165893312482C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C9D9605E490EE7484EDC7A3CCD96E34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F9D58DE8B0C19CE0036A370817DBAF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83B5E1702E6B7AEAC6D5516A986ACB4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8905DB6521F8FDC34752B69DEE3FDEB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8ACCEE8681DEA9DB9F9E0BAF474DFFAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +317,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
+		<key>A25E750D836FA7CDDCDF05B08C2BD0DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B77BB825A77CFEEDA4E0AD29260EFC8B</key>
+		<key>A5F99CD8AAD79C0DEBF892FA5E46E185</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +337,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D754D048A59EE2C949DB4030D58270DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E790A7B67F67B5D81BE60B90A0FD1322</key>
+		<key>E2EEB2A8F665561302544EDE3CB8ED29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD8157898B1C2E8C64CF2D4FA0217473</key>
+		<key>E790A7B67F67B5D81BE60B90A0FD1322</key>
 		<dict>
 			<key>primary</key>
 			<true/>

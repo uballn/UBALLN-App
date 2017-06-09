@@ -14,21 +14,20 @@ class SignupViewController: UIViewController {
     
     @IBOutlet var joinFB: UIButton!
     @IBOutlet var nameField: UITextField!
-    @IBOutlet var lastField: UITextField!
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var createCTA: UIButton!
+    @IBOutlet var optIn: UISwitch!
+    @IBOutlet var Switch: UISwitch!
     
     var refUser = FIRDatabaseReference()
+    var uuid = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refUser = FIRDatabase.database().reference().child("users")
-
         joinFB.layer.cornerRadius = 2
         nameField.layer.cornerRadius = 2
-        lastField.layer.cornerRadius = 2
         emailField.layer.cornerRadius = 2
         passwordField.layer.cornerRadius = 2
         createCTA.layer.cornerRadius = 2
@@ -72,18 +71,7 @@ class SignupViewController: UIViewController {
         nameField.leftView = paddingView3
         nameField.leftViewMode = UITextFieldViewMode.always
         
-        var placeHolder4 = NSMutableAttributedString()
-        let Name4 = "Nickname"
-        
-        placeHolder4 = NSMutableAttributedString(string: Name4, attributes: [NSFontAttributeName : UIFont(name: "Gotham", size: 14.0)!])
-        
-        placeHolder4.addAttribute(NSForegroundColorAttributeName, value: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.35), range: NSRange(location:0,length:Name4.characters.count))
-        
-        lastField.attributedPlaceholder = placeHolder4
-        
-        let paddingView4 = UIView(frame: CGRect(x:0, y:0, width:15, height:self.lastField.frame.height))
-        lastField.leftView = paddingView4
-        lastField.leftViewMode = UITextFieldViewMode.always
+        disabler()
     }
     
     @IBAction func back(_ sender: Any) {
@@ -91,13 +79,26 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func facebookAccount(_ sender: Any) {
+        
+    }
+    
+    @IBAction func emailOptIn(_ sender: Any) {
+        
+    }
+    
+    @IBAction func acceptTerms(_ sender: Any) {
+        if Switch.isOn {
+            createCTA.isEnabled = true
+            joinFB.isEnabled = true
+        } else {
+            createCTA.isEnabled = false
+            joinFB.isEnabled = false
+        }
     }
     
     @IBAction func createAccount(_ sender: Any) {
         guard let name = nameField.text,
         name != "",
-        let nickname = lastField.text,
-        nickname != "",
         let email = emailField.text,
         email != "",
         let password = passwordField.text,
@@ -130,18 +131,16 @@ class SignupViewController: UIViewController {
             })
         })
         
-        addUser()
     }
     
-    func addUser(){
-        let key = refUser.childByAutoId().key
-        
-        let users = ["id": key,
-                       "name": nameField.text! as String,
-                       "alias": lastField.text! as String,
-                       "email": emailField.text! as String
-        ]
-        refUser.child(key).setValue(users)
+    func disabler() {
+        if Switch.isOn {
+            createCTA.isEnabled = true
+            joinFB.isEnabled = true
+        } else {
+            createCTA.isEnabled = false
+            joinFB.isEnabled = false
+        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

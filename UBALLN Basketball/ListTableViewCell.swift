@@ -14,11 +14,8 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet var cellAddress: UILabel!
     @IBOutlet var cellDistance: UILabel!
     @IBOutlet var cellAgeTitle: UILabel!
-    @IBOutlet var cellAge: UILabel!
     @IBOutlet var cellCountTitle: UILabel!
-    @IBOutlet var cellPlayerCount: UILabel!
     @IBOutlet var cellLevelTitle: UILabel!
-    @IBOutlet var cellExperience: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

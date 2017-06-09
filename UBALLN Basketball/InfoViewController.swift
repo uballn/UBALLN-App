@@ -11,12 +11,14 @@ import Firebase
 
 class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    var gender = ["male", "female"]
-    var experience = ["recreational", "high school", "collegiate", "semi-pro", "professional"]
+    var gender = ["––", "male", "female"]
+    var experience = ["––", "recreational", "high school", "collegiate", "semi-pro", "professional"]
     var height = ["4+", "5' 0", "5' 1", "5' 2", "5' 3", "5' 4", "5' 5", "5' 6", "5' 7", "5' 8", "5' 9", "5' 10", "5' 11", "6' 0", "6' 1", "6' 2", "6' 3", "6' 4", "6' 5", "6' 6", "6' 7", "6' 8", "6' 9", "6' 10", "6' 11", "7+"]
     var weight = ["80+ lbs", "90+ lbs", "100+ lbs", "105+ lbs", "110+ lbs", "115+ lbs", "120+ lbs", "125+ lbs", "130+ lbs", "135+ lbs", "140+ lbs", "145+ lbs", "150+ lbs", "155+ lbs", "160+ lbs", "165+ lbs", "170+ lbs", "175+ lbs", "180+ lbs", "185+ lbs", "190+ lbs", "195+ lbs", "200+ lbs", "205+ lbs", "210+ lbs", "215+ lbs", "220+ lbs", "225+ lbs", "230+ lbs", "235+ lbs", "240+ lbs", "245+ lbs", "250+ lbs", "255+ lbs", "260+ lbs", "265+ lbs", "270+ lbs", "275+ lbs", "280+ lbs", "285+ lbs", "290+ lbs", "295+ lbs", "300+ lbs", "310+ lbs", "320+ lbs", "330+ lbs", "340+ lbs", "350+ lbs", "360+ lbs", "370+ lbs", "380+ lbs", "390+ lbs",]
     var refUser = FIRDatabaseReference()
+    var uuid = 0
     
+    @IBOutlet var nicknameField: UITextField!
     @IBOutlet var genderField: UITextField!
     @IBOutlet var birthdayField: UITextField!
     @IBOutlet var lopField: UITextField!
@@ -48,12 +50,26 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         heightField.inputView = picker3
         weightField.inputView = picker4
         
+        nicknameField.layer.cornerRadius = 1
         genderField.layer.cornerRadius = 1
         birthdayField.layer.cornerRadius = 1
         lopField.layer.cornerRadius = 1
         heightField.layer.cornerRadius = 1
         weightField.layer.cornerRadius = 1
         resetBtn.layer.cornerRadius = 1
+        
+        var placeHolder0 = NSMutableAttributedString()
+        let Name0 = "Nickname"
+        
+        placeHolder0 = NSMutableAttributedString(string: Name0, attributes: [NSFontAttributeName : UIFont(name: "Gotham", size: 14.0)!])
+        
+        placeHolder0.addAttribute(NSForegroundColorAttributeName, value: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.35), range: NSRange(location:0,length:Name0.characters.count))
+        
+        nicknameField.attributedPlaceholder = placeHolder0
+        
+        let paddingView0 = UIView(frame: CGRect(x:0, y:0, width:15, height:self.nicknameField.frame.height))
+        nicknameField.leftView = paddingView0
+        nicknameField.leftViewMode = UITextFieldViewMode.always
         
         var placeHolder1 = NSMutableAttributedString()
         let Name1 = "M/F"
@@ -124,7 +140,9 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
 
     @IBAction func setupDetails(_ sender: Any) {
-        guard let gender = genderField.text,
+        guard let alias = nicknameField.text,
+        alias != "",
+        let gender = genderField.text,
         gender != "",
         let birthday = birthdayField.text,
         birthday != "",
@@ -238,16 +256,16 @@ class InfoViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func addUser(){
-        let key = refUser.childByAutoId().key
+        let userID = FIRAuth.auth()?.currentUser?.uid
         
-        let users = ["id": key,
+        let values = ["alias": nicknameField.text! as String,
                         "gender": genderField.text! as String,
                         "age": birthdayField.text! as String,
                         "played": lopField.text! as String,
                         "height": heightField.text! as String,
                         "weight": weightField.text! as String
                         ]
-        refUser.child(key).setValue(users)
+        refUser.child(userID!).setValue(values)
     }
     
     override func didReceiveMemoryWarning() {

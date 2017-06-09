@@ -81,6 +81,8 @@ class LoginViewController: UIViewController {
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
             guard error == nil else {
                 AlertController.showAlert(self, title: "Error", message: error!.localizedDescription)
+                UserDefaults.standard.set(FIRAuth.auth()!.currentUser!.uid, forKey: "uid")
+                UserDefaults.standard.synchronize()
                 return
             }
             guard let user = user else { return }

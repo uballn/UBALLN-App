@@ -89,6 +89,9 @@ PODS:
   - GoogleMaps/Base (2.2.0)
   - GoogleMaps/Maps (2.2.0):
     - GoogleMaps/Base
+  - GooglePlacePicker (2.2.0):
+    - GoogleMaps (= 2.2.0)
+    - GooglePlaces (= 2.2.0)
   - GooglePlaces (2.2.0):
     - GoogleMaps/Base (= 2.2.0)
   - GoogleSignIn (4.0.2):
@@ -139,6 +142,7 @@ DEPENDENCIES:
   - Firebase/RemoteConfig
   - Firebase/Storage
   - GoogleMaps
+  - GooglePlacePicker
   - GooglePlaces
   - IQKeyboardManager
 
@@ -158,6 +162,7 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 43ac87810e4961f5093024d3525bfe022f956da3
   GoogleAPIClientForREST: a8b95a252014ce2e618df6b75dc72eca2c00b4af
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlacePicker: 345b1aabd42c9d6d9bf2369c1bae1234d903e764
   GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
@@ -166,6 +171,6 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
 
-PODFILE CHECKSUM: de00cff8ed7a4d0f80a7c2cae6d051cc32c39eee
+PODFILE CHECKSUM: 6e168de6528b13881a2700433db5d38e180a8ad4
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

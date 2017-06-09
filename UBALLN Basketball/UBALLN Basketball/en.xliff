@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="UBALLN Basketball/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body/>
+  </file>
+  <file original="UBALLN Basketball/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="1W3-PZ-Jfr.normalTitle">
+        <source>ACTIVITY</source>
+        <note>Class = "UIButton"; normalTitle = "ACTIVITY"; ObjectID = "1W3-PZ-Jfr";</note>
+      </trans-unit>
+      <trans-unit id="4Ga-Zl-dYx.normalTitle">
+        <source>JOIN WITH FACEBOOK</source>
+        <note>Class = "UIButton"; normalTitle = "JOIN WITH FACEBOOK"; ObjectID = "4Ga-Zl-dYx";</note>
+      </trans-unit>
+      <trans-unit id="4kZ-zd-q0O.title">
+        <source>NOTIFICATIONS</source>
+        <note>Class = "UINavigationItem"; title = "NOTIFICATIONS"; ObjectID = "4kZ-zd-q0O";</note>
+      </trans-unit>
+      <trans-unit id="5fP-x1-oyo.title">
+        <source>Info</source>
+        <note>Class = "UIViewController"; title = "Info"; ObjectID = "5fP-x1-oyo";</note>
+      </trans-unit>
+      <trans-unit id="5gw-QU-eIF.title">
+        <source>Features</source>
+        <note>Class = "UIViewController"; title = "Features"; ObjectID = "5gw-QU-eIF";</note>
+      </trans-unit>
+      <trans-unit id="7jA-bY-8rp.title">
+        <source>Map View</source>
+        <note>Class = "UIViewController"; title = "Map View"; ObjectID = "7jA-bY-8rp";</note>
+      </trans-unit>
+      <trans-unit id="9Dg-bV-Q5q.text">
+        <source>full name</source>
+        <note>Class = "UILabel"; text = "full name"; ObjectID = "9Dg-bV-Q5q";</note>
+      </trans-unit>
+      <trans-unit id="9jl-x4-8ZS.title">
+        <source>Friends</source>
+        <note>Class = "UIViewController"; title = "Friends"; ObjectID = "9jl-x4-8ZS";</note>
+      </trans-unit>
+      <trans-unit id="55K-Lm-dpi.title">
+        <source>Signup</source>
+        <note>Class = "UIViewController"; title = "Signup"; ObjectID = "55K-Lm-dpi";</note>
+      </trans-unit>
+      <trans-unit id="491-eb-fy1.text">
+        <source>VIEW ALL</source>
+        <note>Class = "UILabel"; text = "VIEW ALL"; ObjectID = "491-eb-fy1";</note>
+      </trans-unit>
+      <trans-unit id="A6U-3H-iRP.text">
+        <source>Turn on private mode, and we'll tell only who you choose.</source>
+        <note>Class = "UILabel"; text = "Turn on private mode, and we'll tell only who you choose."; ObjectID = "A6U-3H-iRP";</note>
+      </trans-unit>
+      <trans-unit id="Bsk-aX-cBd.normalTitle">
+        <source>MAKE IT HAPPEN!</source>
+        <note>Class = "UIButton"; normalTitle = "MAKE IT HAPPEN!"; ObjectID = "Bsk-aX-cBd";</note>
+      </trans-unit>
+      <trans-unit id="CeM-W8-O4d.normalTitle">
+        <source>CREATE ACCOUNT</source>
+        <note>Class = "UIButton"; normalTitle = "CREATE ACCOUNT"; ObjectID = "CeM-W8-O4d";</note>
+      </trans-unit>
+      <trans-unit id="CtG-at-cJh.text">
+        <source>set up your profile</source>
+        <note>Class = "UILabel"; text = "set up your profile"; ObjectID = "CtG-at-cJh";</note>
+      </trans-unit>
+      <trans-unit id="DhP-cR-Xdb.title">
+        <source>Map</source>
+        <note>Class = "UIViewController"; title = "Map"; ObjectID = "DhP-cR-Xdb";</note>
+      </trans-unit>
+      <trans-unit id="EMN-lQ-Qvu.text">
+        <source>OR</source>
+        <note>Class = "UILabel"; text = "OR"; ObjectID = "EMN-lQ-Qvu";</note>
+      </trans-unit>
+      <trans-unit id="ES9-d7-Xgi.text">
+        <source>31</source>
+        <note>Class = "UILabel"; text = "31"; ObjectID = "ES9-d7-Xgi";</note>
+      </trans-unit>
+      <trans-unit id="Eo0-Uh-PHJ.placeholder">
+        <source>Where will you be playing?</source>
+        <note>Class = "UISearchBar"; placeholder = "Where will you be playing?"; ObjectID = "Eo0-Uh-PHJ";</note>
+      </trans-unit>
+      <trans-unit id="F1G-Rr-ueB.text">
+        <source>Ryan Leak</source>
+        <note>Class = "UILabel"; text = "Ryan Leak"; ObjectID = "F1G-Rr-ueB";</note>
+      </trans-unit>
+      <trans-unit id="GWE-3V-YDv.text">
+        <source>Not a member yet? Sign up.</source>
+        <note>Class = "UILabel"; text = "Not a member yet? Sign up."; ObjectID = "GWE-3V-YDv";</note>
+      </trans-unit>
+      <trans-unit id="Gpn-Sz-3Q4.title">
+        <source>Password</source>
+        <note>Class = "UIViewController"; title = "Password"; ObjectID = "Gpn-Sz-3Q4";</note>
+      </trans-unit>
+      <trans-unit id="I0B-5w-ba0.text">
+        <source>Avg. Age</source>
+        <note>Class = "UILabel"; text = "Avg. Age"; ObjectID = "I0B-5w-ba0";</note>
+      </trans-unit>
+      <trans-unit id="JO4-15-9W6.text">
+        <source>Enter your email to receive instructions on how to reset your password.</source>
+        <note>Class = "UILabel"; text = "Enter your email to receive instructions on how to reset your password."; ObjectID = "JO4-15-9W6";</note>
+      </trans-unit>
+      <trans-unit id="JPZ-yp-hkq.normalTitle">
+        <source>LOG IN</source>
+        <note>Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "JPZ-yp-hkq";</note>
+      </trans-unit>
+      <trans-unit id="N1R-ew-I2a.text">
+        <source>Enter your player profile info to better customize the available games you see.</source>
+        <note>Class = "UILabel"; text = "Enter your player profile info to better customize the available games you see."; ObjectID = "N1R-ew-I2a";</note>
+      </trans-unit>
+      <trans-unit id="NkN-UM-qFJ.text">
+        <source>Share this game</source>
+        <note>Class = "UILabel"; text = "Share this game"; ObjectID = "NkN-UM-qFJ";</note>
+      </trans-unit>
+      <trans-unit id="NqD-vn-LWd.text">
+        <source>Already a member? Sign in.</source>
+        <note>Class = "UILabel"; text = "Already a member? Sign in."; ObjectID = "NqD-vn-LWd";</note>
+      </trans-unit>
+      <trans-unit id="OA7-1a-eR4.text">
+        <source>your account for
+everything uballn</source>
+        <note>Class = "UILabel"; text = "your account for\neverything uballn"; ObjectID = "OA7-1a-eR4";</note>
+      </trans-unit>
+      <trans-unit id="OJR-V1-tZK.normalTitle">
+        <source>NEARBY</source>
+        <note>Class = "UIButton"; normalTitle = "NEARBY"; ObjectID = "OJR-V1-tZK";</note>
+      </trans-unit>
+      <trans-unit id="OiR-T4-6wO.text">
+        <source>your account for
+everything uballn</source>
+        <note>Class = "UILabel"; text = "your account for\neverything uballn"; ObjectID = "OiR-T4-6wO";</note>
+      </trans-unit>
+      <trans-unit id="PLg-GV-jJ1.text">
+        <source>2.13</source>
+        <note>Class = "UILabel"; text = "2.13"; ObjectID = "PLg-GV-jJ1";</note>
+      </trans-unit>
+      <trans-unit id="QRA-gS-ytp.title">
+        <source>Edit</source>
+        <note>Class = "UIViewController"; title = "Edit"; ObjectID = "QRA-gS-ytp";</note>
+      </trans-unit>
+      <trans-unit id="RFz-CD-HPO.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "RFz-CD-HPO";</note>
+      </trans-unit>
+      <trans-unit id="RbV-lM-QYe.normalTitle">
+        <source>QUICKSTART</source>
+        <note>Class = "UIButton"; normalTitle = "QUICKSTART"; ObjectID = "RbV-lM-QYe";</note>
+      </trans-unit>
+      <trans-unit id="RfK-Ge-DbL.title">
+        <source>Login</source>
+        <note>Class = "UIViewController"; title = "Login"; ObjectID = "RfK-Ge-DbL";</note>
+      </trans-unit>
+      <trans-unit id="RwF-rw-fW2.normalTitle">
+        <source>LOG IN</source>
+        <note>Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "RwF-rw-fW2";</note>
+      </trans-unit>
+      <trans-unit id="S4r-uO-Djm.text">
+        <source>FRIENDS</source>
+        <note>Class = "UILabel"; text = "FRIENDS"; ObjectID = "S4r-uO-Djm";</note>
+      </trans-unit>
+      <trans-unit id="SVk-k2-AIs.text">
+        <source>By logging in, you agree to UBALLN's Privacy Policy &amp; Terms and Conditions</source>
+        <note>Class = "UILabel"; text = "By logging in, you agree to UBALLN's Privacy Policy &amp; Terms and Conditions"; ObjectID = "SVk-k2-AIs";</note>
+      </trans-unit>
+      <trans-unit id="SnO-yM-CzX.title">
+        <source>SETTINGS</source>
+        <note>Class = "UINavigationItem"; title = "SETTINGS"; ObjectID = "SnO-yM-CzX";</note>
+      </trans-unit>
+      <trans-unit id="Us5-zm-vPh.text">
+        <source>Forgot password?</source>
+        <note>Class = "UILabel"; text = "Forgot password?"; ObjectID = "Us5-zm-vPh";</note>
+      </trans-unit>
+      <trans-unit id="VwR-TK-Pwg.normalTitle">
+        <source>QUICKSTART</source>
+        <note>Class = "UIButton"; normalTitle = "QUICKSTART"; ObjectID = "VwR-TK-Pwg";</note>
+      </trans-unit>
+      <trans-unit id="XxE-Ay-0R1.text">
+        <source>Active Players</source>
+        <note>Class = "UILabel"; text = "Active Players"; ObjectID = "XxE-Ay-0R1";</note>
+      </trans-unit>
+      <trans-unit id="YPT-wM-tmg.normalTitle">
+        <source>SET IT UP</source>
+        <note>Class = "UIButton"; normalTitle = "SET IT UP"; ObjectID = "YPT-wM-tmg";</note>
+      </trans-unit>
+      <trans-unit id="ZP3-JR-wN5.normalTitle">
+        <source>LOG IN WITH FACEBOOK</source>
+        <note>Class = "UIButton"; normalTitle = "LOG IN WITH FACEBOOK"; ObjectID = "ZP3-JR-wN5";</note>
+      </trans-unit>
+      <trans-unit id="Zf7-Z6-iAM.text">
+        <source>Sign up for emails to hear all the latest from UBALLN.</source>
+        <note>Class = "UILabel"; text = "Sign up for emails to hear all the latest from UBALLN."; ObjectID = "Zf7-Z6-iAM";</note>
+      </trans-unit>
+      <trans-unit id="ZoN-RU-w2v.normalTitle">
+        <source>JOIN</source>
+        <note>Class = "UIButton"; normalTitle = "JOIN"; ObjectID = "ZoN-RU-w2v";</note>
+      </trans-unit>
+      <trans-unit id="agj-Wc-Ayi.normalTitle">
+        <source>NEARBY</source>
+        <note>Class = "UIButton"; normalTitle = "NEARBY"; ObjectID = "agj-Wc-Ayi";</note>
+      </trans-unit>
+      <trans-unit id="bNb-HO-eFU.title">
+        <source>List</source>
+        <note>Class = "UIViewController"; title = "List"; ObjectID = "bNb-HO-eFU";</note>
+      </trans-unit>
+      <trans-unit id="biR-ft-p2Z.text">
+        <source>SUGGESTED FRIENDS</source>
+        <note>Class = "UILabel"; text = "SUGGESTED FRIENDS"; ObjectID = "biR-ft-p2Z";</note>
+      </trans-unit>
+      <trans-unit id="cEn-NP-N60.text">
+        <source>You don't want to show up to empty court. Make sure your friends know where to meet up.</source>
+        <note>Class = "UILabel"; text = "You don't want to show up to empty court. Make sure your friends know where to meet up."; ObjectID = "cEn-NP-N60";</note>
+      </trans-unit>
+      <trans-unit id="cQe-am-DFB.text">
+        <source>Or return to Log In.</source>
+        <note>Class = "UILabel"; text = "Or return to Log In."; ObjectID = "cQe-am-DFB";</note>
+      </trans-unit>
+      <trans-unit id="dlA-BB-5Tn.text">
+        <source>set up a game, and we'll make sure they show up!</source>
+        <note>Class = "UILabel"; text = "set up a game, and we'll make sure they show up!"; ObjectID = "dlA-BB-5Tn";</note>
+      </trans-unit>
+      <trans-unit id="gep-HZ-HUS.text">
+        <source>30+</source>
+        <note>Class = "UILabel"; text = "30+"; ObjectID = "gep-HZ-HUS";</note>
+      </trans-unit>
+      <trans-unit id="iIq-z8-gnQ.normalTitle">
+        <source>NEARBY</source>
+        <note>Class = "UIButton"; normalTitle = "NEARBY"; ObjectID = "iIq-z8-gnQ";</note>
+      </trans-unit>
+      <trans-unit id="jI0-JP-i4T.normalTitle">
+        <source>QUICKSTART</source>
+        <note>Class = "UIButton"; normalTitle = "QUICKSTART"; ObjectID = "jI0-JP-i4T";</note>
+      </trans-unit>
+      <trans-unit id="kHV-nz-Xus.text">
+        <source>tell your squad!</source>
+        <note>Class = "UILabel"; text = "tell your squad!"; ObjectID = "kHV-nz-Xus";</note>
+      </trans-unit>
+      <trans-unit id="kUE-vC-4VH.title">
+        <source>FRIENDS</source>
+        <note>Class = "UINavigationItem"; title = "FRIENDS"; ObjectID = "kUE-vC-4VH";</note>
+      </trans-unit>
+      <trans-unit id="kXw-o4-XK6.title">
+        <source>Profile</source>
+        <note>Class = "UIViewController"; title = "Profile"; ObjectID = "kXw-o4-XK6";</note>
+      </trans-unit>
+      <trans-unit id="kaW-Fw-mqZ.title">
+        <source>GAME DETAILS</source>
+        <note>Class = "UIViewController"; title = "GAME DETAILS"; ObjectID = "kaW-Fw-mqZ";</note>
+      </trans-unit>
+      <trans-unit id="lbD-XC-OiC.normalTitle">
+        <source>ACTIVITY</source>
+        <note>Class = "UIButton"; normalTitle = "ACTIVITY"; ObjectID = "lbD-XC-OiC";</note>
+      </trans-unit>
+      <trans-unit id="mGw-HU-1cE.text">
+        <source>reset password</source>
+        <note>Class = "UILabel"; text = "reset password"; ObjectID = "mGw-HU-1cE";</note>
+      </trans-unit>
+      <trans-unit id="nBg-Au-qaa.title">
+        <source>Settings</source>
+        <note>Class = "UIViewController"; title = "Settings"; ObjectID = "nBg-Au-qaa";</note>
+      </trans-unit>
+      <trans-unit id="oLf-nz-sY6.text">
+        <source>By creating an account, you agree to UBALLN's Privacy Policy &amp; Terms and Conditions</source>
+        <note>Class = "UILabel"; text = "By creating an account, you agree to UBALLN's Privacy Policy &amp; Terms and Conditions"; ObjectID = "oLf-nz-sY6";</note>
+      </trans-unit>
+      <trans-unit id="pgS-Xa-hku.text">
+        <source>200</source>
+        <note>Class = "UILabel"; text = "200"; ObjectID = "pgS-Xa-hku";</note>
+      </trans-unit>
+      <trans-unit id="plE-pY-FRo.placeholder">
+        <source>Search by name or email</source>
+        <note>Class = "UISearchBar"; placeholder = "Search by name or email"; ObjectID = "plE-pY-FRo";</note>
+      </trans-unit>
+      <trans-unit id="plE-pY-FRo.scopeButtonTitles[0]">
+        <source>Title</source>
+        <note>Class = "UISearchBar"; plE-pY-FRo.scopeButtonTitles[0] = "Title"; ObjectID = "plE-pY-FRo";</note>
+      </trans-unit>
+      <trans-unit id="plE-pY-FRo.scopeButtonTitles[1]">
+        <source>Title</source>
+        <note>Class = "UISearchBar"; plE-pY-FRo.scopeButtonTitles[1] = "Title"; ObjectID = "plE-pY-FRo";</note>
+      </trans-unit>
+      <trans-unit id="pn3-6r-rg3.normalTitle">
+        <source>ACTIVITY</source>
+        <note>Class = "UIButton"; normalTitle = "ACTIVITY"; ObjectID = "pn3-6r-rg3";</note>
+      </trans-unit>
+      <trans-unit id="q8v-gz-nU2.title">
+        <source>Notifications</source>
+        <note>Class = "UIViewController"; title = "Notifications"; ObjectID = "q8v-gz-nU2";</note>
+      </trans-unit>
+      <trans-unit id="rcA-Z3-MsE.text">
+        <source>24 Hour Fitness North Dallas</source>
+        <note>Class = "UILabel"; text = "24 Hour Fitness North Dallas"; ObjectID = "rcA-Z3-MsE";</note>
+      </trans-unit>
+      <trans-unit id="ruH-M6-ryv.normalTitle">
+        <source>ALL DONE</source>
+        <note>Class = "UIButton"; normalTitle = "ALL DONE"; ObjectID = "ruH-M6-ryv";</note>
+      </trans-unit>
+      <trans-unit id="ruY-ba-rnA.text">
+        <source>• • •</source>
+        <note>Class = "UILabel"; text = "• • •"; ObjectID = "ruY-ba-rnA";</note>
+      </trans-unit>
+      <trans-unit id="u5E-Au-p6M.normalTitle">
+        <source>RESET</source>
+        <note>Class = "UIButton"; normalTitle = "RESET"; ObjectID = "u5E-Au-p6M";</note>
+      </trans-unit>
+      <trans-unit id="uE2-7W-cvx.title">
+        <source>EDIT PROFILE</source>
+        <note>Class = "UINavigationItem"; title = "EDIT PROFILE"; ObjectID = "uE2-7W-cvx";</note>
+      </trans-unit>
+      <trans-unit id="wYC-gL-Rxo.normalTitle">
+        <source>LOG OUT</source>
+        <note>Class = "UIButton"; normalTitle = "LOG OUT"; ObjectID = "wYC-gL-Rxo";</note>
+      </trans-unit>
+      <trans-unit id="xA0-R5-gqo.text">
+        <source>0.2 mi</source>
+        <note>Class = "UILabel"; text = "0.2 mi"; ObjectID = "xA0-R5-gqo";</note>
+      </trans-unit>
+      <trans-unit id="xBt-zL-tNk.text">
+        <source>Avg. Exp.</source>
+        <note>Class = "UILabel"; text = "Avg. Exp."; ObjectID = "xBt-zL-tNk";</note>
+      </trans-unit>
+      <trans-unit id="xep-vc-vmo.title">
+        <source>Quick Start</source>
+        <note>Class = "UIViewController"; title = "Quick Start"; ObjectID = "xep-vc-vmo";</note>
+      </trans-unit>
+      <trans-unit id="y9s-LZ-OGZ.title">
+        <source>Share</source>
+        <note>Class = "UIViewController"; title = "Share"; ObjectID = "y9s-LZ-OGZ";</note>
+      </trans-unit>
+      <trans-unit id="yJg-T3-Xli.normalTitle">
+        <source>+ ADD FRIENDS</source>
+        <note>Class = "UIButton"; normalTitle = "+ ADD FRIENDS"; ObjectID = "yJg-T3-Xli";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="UBALLN Basketball/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.033</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="UBALLN BasketballTests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="UBALLN BasketballUITests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3.2" build-num="8E2002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

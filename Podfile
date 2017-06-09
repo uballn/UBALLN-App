@@ -18,6 +18,7 @@ target 'UBALLN Basketball' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'IQKeyboardManager'
+  pod 'GooglePlacePicker'
 
   # Pods for UBALLN Basketball
 
